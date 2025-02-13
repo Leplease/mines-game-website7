@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake Mines Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Admin Panel -->
+        <div class="admin-panel">
+            <h3>Admin Panel</h3>
+            <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+            <button id="adminLogin">Login</button>
+            <div id="adminControls" style="display: none;">
+                <label for="userBalance">Player Balance:</label>
+                <input type="number" id="userBalance" value="100">
+                <button id="updateUserBalance">Update Balance</button>
+            </div>
+        </div>
+
+        <!-- Game Controls -->
+        <div class="game-controls">
+            <p>Current Balance: <span id="currentBalance">100</span></p>
+            <p>Multiplier: <span id="multiplier">1x</span></p>
+            <button id="startGame">Start Game</button>
+            <button id="cashOut">Cash Out</button>
+            <button id="betButton">Place Bet</button>
+        </div>
+
+        <!-- Game Grid -->
+        <div class="grid" id="grid"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
